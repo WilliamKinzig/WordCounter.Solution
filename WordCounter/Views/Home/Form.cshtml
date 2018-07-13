@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Counter</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+      <div class="container">
+      <h1>Word Counter</h1>
+      <h3>I am here to count words for you</h3>
+
+      <p>
+        - First enter a word you'd like me to count.<br>
+        - Then enter a sentence or paragraph you like me to scan.
+      </p>
+
+      <form action='/form'> <!-- look for this in WordCounterController.cs -->
+
+      <div class='form-group'>
+        <label for='word'>Word:</label>
+        <input id='word' name='word' class='form-control' type='text'>
+      </div>
+
+      <br>
+
+      <div class='form-group'>
+        <label for='sentence'>Sentence(s)</label>
+        <input id='sentence' name='sentence' class='form-control' type='text'>
+      </div>
+
+    </div>
+  </body>
+</html>
