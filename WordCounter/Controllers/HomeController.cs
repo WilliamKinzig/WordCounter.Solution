@@ -18,5 +18,10 @@ namespace WordCounter.Controllers
       return View();
     }
 
+    [Route("/solution")]
+    public ActionResult Solution()
+    {
+      return View();
+    }
   }
 }
