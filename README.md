@@ -80,3 +80,16 @@ Split _string sentence into an array  / "cat is orange"/array[1] == "is"
     -return final counter result to user
 Behavior		                                   Input  Output
 String[] blah = new String[] {"cat", "is", "cat"}/ "cat" /  2
+
+/********************************************************************************/
+
+
+make a splash page
+
+make a GamePlay page
+
+make a Form
+
+Use two controller classes: HomeController and WordCounterController
+
+Test Http Get methods
