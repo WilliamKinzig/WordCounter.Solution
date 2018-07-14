@@ -18,10 +18,25 @@ namespace WordCounter.Controllers
       return View();
     }
 
-    [Route("/solution")]
-    public ActionResult Solution()
+    [Route("/summary")]
+    public ActionResult summary()
+    {
+      RepeatCounter newRepeatCounter = new RepeatCounter();
+      newRepeatCounter.SetWordToCount(Request.Query["word"]);
+      newRepeatCounter.SetParagraph(Request.Query["sentence"]);
+      return View("Summary",newRepeatCounter);
+    }
+
+    [Route("/blah")]
+    public ActionResult Summary()
     {
       return View();
     }
+
+    // [Route("/solution")]
+    // public ActionResult Solution()
+    // {
+    //   return View();
+    // }
   }
 }

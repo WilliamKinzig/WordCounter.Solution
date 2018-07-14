@@ -5,19 +5,18 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-      <div class="container">
-      <h1>Word Counter</h1>
-      <h3>I am here to count words for you</h3>
-
-      <p>
-        - First enter a word you'd like me to count.<br>
-        - Then enter a sentence or paragraph you like me to scan.
-      </p>
+    <div class="container">
+      <h2>Word Counter</h2>
+      <blockquote class="bg-info">
+        <footer>First enter a word you'd like me to count.</footer>
+        <footer>Then enter a sentence or paragraph you like me to scan.</footer>
+        <footer>Finally click Gimme Gimme button see what you've done.</footer>
+      </blockquote>
 
       <!-- look for this in WordCounterController.cs -->
-      <!-- <form action='/Splash'> -->
+     <form action='/Summary'>
 
-      <!-- <div class='form-group'>
+    <div class='form-group'>
         <label for='word'>Word:</label>
         <input id='word' name='word' class='form-control' type='text'>
       </div>
@@ -27,12 +26,15 @@
       <div class='form-group'>
         <label for='sentence'>Sentence(s)</label>
         <input id='sentence' name='sentence' class='form-control' type='text'>
-      </div> -->
+      </div>
 
-      <form action="/Solution">
-        <button type="click" class="btn btn-info">Gimme Gimme</a>
-      </form>
+      <div>
+        <!-- <form action="/Summary"> -->
+          <button type="click" class="btn btn-success">Gimme Gimme</a>
+        </form>
+      </div>
 
     </div>
+
   </body>
 </html>

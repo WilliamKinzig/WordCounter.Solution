@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+    <title>Welcome</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+<body>
+  <div class='container' >
+
+    <h2>Word Counter Conclusion</h2>
+    <blockquote class="bg-info">
+      <p>"That was really fun for me!"</p>
+      <footer>Your word is @Model.GetWordToCount(),</footer>
+      <footer>It occured @Model.GetResults() times in your given sentence(s).</footer>
+    </blockquote>
+
+      <h4>"Please let me do it again!"</h4>
+
+    <form action="/Form">
+      <button id="btnYes" type="click" class="btn btn-info btn-lg">Okay!</a>
+    </form>
+
+    <form action="/">
+      <button id="btnNo" type="click" class="btn btn-danger btn-xs">NO WAY!</a>
+    </form>
+
+  </div>
+</body>
+</html>
