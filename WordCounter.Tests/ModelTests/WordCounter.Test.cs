@@ -56,7 +56,6 @@ namespace WordCounter.Tests
         [TestMethod]
         public void GetTheWordCount_ReturnTheWordCount_Int()
         {
-
             //Arrange
             RepeatCounter newRepeatCounter = new RepeatCounter("cat", "cat and cat");
             string paragraph = newRepeatCounter.GetParaGraph();
@@ -77,11 +76,17 @@ namespace WordCounter.Tests
           RepeatCounter newRepeatCounter = new RepeatCounter("cat", "cat.");
           string[] testArray1 = new string[] {"cat"};
 
+          string paragraph = newRepeatCounter.GetParaGraph();
+          string word = newRepeatCounter.GetWordToCount();
+          string removedPunctuaion = newRepeatCounter.RemovePunctuaion();
+          string[] test = newRepeatCounter.StringToArray();
+          int result = newRepeatCounter.GetResults();
+
           //Act
           string[] testArray2 = newRepeatCounter.StringToArray();
 
           //Assert
-
+          Assert.AreEqual (testArray2)
           CollectionAssert.AreEqual (testArray1, testArray2);
         }
     }

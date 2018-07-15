@@ -2,6 +2,8 @@ using System;
 using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+
 
 namespace WordCounter.Models
 {
@@ -42,6 +44,23 @@ namespace WordCounter.Models
         {
             return _paragraphToScan;
         }
+
+        public string RemovePunctuation(string stringIn)
+        {
+          // string s = "sxrdct?fvzguh,bij.";
+          var sb = new StringBuilder();
+
+          foreach (char c in stringIn)
+          {
+             if (!char.IsPunctuation(c))
+                sb.Append(c);
+          }
+
+          string stringOut = sb.ToString();
+
+          return stringOut;
+        }
+
 
         /**
          * This method takes in a string sentence/paragraph and splits it into a string array.
