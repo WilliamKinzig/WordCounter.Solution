@@ -69,5 +69,20 @@ namespace WordCounter.Tests
             //Assert
             Assert.AreEqual(result,2);
         }
+
+        [TestMethod]
+        public void RemovePunctuation_ReturnNoPunctuation_String()
+        {
+          //Arrange
+          RepeatCounter newRepeatCounter = new RepeatCounter("cat", "cat.");
+          string[] testArray1 = new string[] {"cat"};
+
+          //Act
+          string[] testArray2 = newRepeatCounter.StringToArray();
+
+          //Assert
+
+          CollectionAssert.AreEqual (testArray1, testArray2);
+        }
     }
 }
